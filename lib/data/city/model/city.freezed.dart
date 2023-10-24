@@ -25,6 +25,8 @@ mixin _$City {
   String get country => throw _privateConstructorUsedError;
   String get state => throw _privateConstructorUsedError;
   String get image => throw _privateConstructorUsedError;
+  @SportConverter()
+  List<Sport> get sports => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -37,7 +39,12 @@ abstract class $CityCopyWith<$Res> {
       _$CityCopyWithImpl<$Res, City>;
   @useResult
   $Res call(
-      {String id, String name, String country, String state, String image});
+      {String id,
+      String name,
+      String country,
+      String state,
+      String image,
+      @SportConverter() List<Sport> sports});
 }
 
 /// @nodoc
@@ -58,6 +65,7 @@ class _$CityCopyWithImpl<$Res, $Val extends City>
     Object? country = null,
     Object? state = null,
     Object? image = null,
+    Object? sports = null,
   }) {
     return _then(_value.copyWith(
       id: null == id
@@ -80,6 +88,10 @@ class _$CityCopyWithImpl<$Res, $Val extends City>
           ? _value.image
           : image // ignore: cast_nullable_to_non_nullable
               as String,
+      sports: null == sports
+          ? _value.sports
+          : sports // ignore: cast_nullable_to_non_nullable
+              as List<Sport>,
     ) as $Val);
   }
 }
@@ -92,7 +104,12 @@ abstract class _$$CityImplCopyWith<$Res> implements $CityCopyWith<$Res> {
   @override
   @useResult
   $Res call(
-      {String id, String name, String country, String state, String image});
+      {String id,
+      String name,
+      String country,
+      String state,
+      String image,
+      @SportConverter() List<Sport> sports});
 }
 
 /// @nodoc
@@ -110,6 +127,7 @@ class __$$CityImplCopyWithImpl<$Res>
     Object? country = null,
     Object? state = null,
     Object? image = null,
+    Object? sports = null,
   }) {
     return _then(_$CityImpl(
       id: null == id
@@ -132,6 +150,10 @@ class __$$CityImplCopyWithImpl<$Res>
           ? _value.image
           : image // ignore: cast_nullable_to_non_nullable
               as String,
+      sports: null == sports
+          ? _value._sports
+          : sports // ignore: cast_nullable_to_non_nullable
+              as List<Sport>,
     ));
   }
 }
@@ -144,7 +166,9 @@ class _$CityImpl implements _City {
       required this.name,
       required this.country,
       required this.state,
-      required this.image});
+      required this.image,
+      @SportConverter() required final List<Sport> sports})
+      : _sports = sports;
 
   factory _$CityImpl.fromJson(Map<String, dynamic> json) =>
       _$$CityImplFromJson(json);
@@ -159,10 +183,18 @@ class _$CityImpl implements _City {
   final String state;
   @override
   final String image;
+  final List<Sport> _sports;
+  @override
+  @SportConverter()
+  List<Sport> get sports {
+    if (_sports is EqualUnmodifiableListView) return _sports;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_sports);
+  }
 
   @override
   String toString() {
-    return 'City(id: $id, name: $name, country: $country, state: $state, image: $image)';
+    return 'City(id: $id, name: $name, country: $country, state: $state, image: $image, sports: $sports)';
   }
 
   @override
@@ -174,12 +206,14 @@ class _$CityImpl implements _City {
             (identical(other.name, name) || other.name == name) &&
             (identical(other.country, country) || other.country == country) &&
             (identical(other.state, state) || other.state == state) &&
-            (identical(other.image, image) || other.image == image));
+            (identical(other.image, image) || other.image == image) &&
+            const DeepCollectionEquality().equals(other._sports, _sports));
   }
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(runtimeType, id, name, country, state, image);
+  int get hashCode => Object.hash(runtimeType, id, name, country, state, image,
+      const DeepCollectionEquality().hash(_sports));
 
   @JsonKey(ignore: true)
   @override
@@ -201,7 +235,8 @@ abstract class _City implements City {
       required final String name,
       required final String country,
       required final String state,
-      required final String image}) = _$CityImpl;
+      required final String image,
+      @SportConverter() required final List<Sport> sports}) = _$CityImpl;
 
   factory _City.fromJson(Map<String, dynamic> json) = _$CityImpl.fromJson;
 
@@ -215,6 +250,9 @@ abstract class _City implements City {
   String get state;
   @override
   String get image;
+  @override
+  @SportConverter()
+  List<Sport> get sports;
   @override
   @JsonKey(ignore: true)
   _$$CityImplCopyWith<_$CityImpl> get copyWith =>

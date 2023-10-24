@@ -1,355 +1,83 @@
-{
-    "data": [
-        {
-            "id": "1",
-            "name": "New York",
-            "state": "New York",
-            "country": "USA",
-            "image": "url"
-        },
-        {
-            "id": "2",
-            "name": "Los Angeles",
-            "state": "California",
-            "country": "USA",
-            "image": "url"
-        },
-        {
-            "id": "3",
-            "name": "Chicago",
-            "state": "Illinois",
-            "country": "USA",
-            "image": "url"
-        },
-        {
-            "id": "4",
-            "name": "Houston",
-            "state": "Texas",
-            "country": "USA",
-            "image": "url"
-        },
-        {
-            "id": "5",
-            "name": "Phoenix",
-            "state": "Arizona",
-            "country": "USA",
-            "image": "url"
-        },
-        {
-            "id": "6",
-            "name": "Philadelphia",
-            "state": "Pennsylvania",
-            "country": "USA",
-            "image": "url"
-        },
-        {
-            "id": "7",
-            "name": "San Antonio",
-            "state": "Texas",
-            "country": "USA",
-            "image": "url"
-        },
-        {
-            "id": "8",
-            "name": "San Diego",
-            "state": "California",
-            "country": "USA",
-            "image": "url"
-        },
-        {
-            "id": "9",
-            "name": "Dallas",
-            "state": "Texas",
-            "country": "USA",
-            "image": "url"
-        },
-        {
-            "id": "10",
-            "name": "San Jose",
-            "state": "California",
-            "country": "USA",
-            "image": "url"
-        },
-        {
-            "id": "11",
-            "name": "Austin",
-            "state": "Texas",
-            "country": "USA",
-            "image": "url"
-        },
-        {
-            "id": "12",
-            "name": "Jacksonville",
-            "state": "Florida",
-            "country": "USA",
-            "image": "url"
-        },
-        {
-            "id": "13",
-            "name": "Indianapolis",
-            "state": "Indiana",
-            "country": "USA",
-            "image": "url"
-        },
-        {
-            "id": "14",
-            "name": "San Francisco",
-            "state": "California",
-            "country": "USA",
-            "image": "url"
-        },
-        {
-            "id": "15",
-            "name": "Columbus",
-            "state": "Ohio",
-            "country": "USA",
-            "image": "url"
-        },
-        {
-            "id": "16",
-            "name": "Fort Worth",
-            "state": "Texas",
-            "country": "USA",
-            "image": "url"
-        },
-        {
-            "id": "17",
-            "name": "Charlotte",
-            "state": "North Carolina",
-            "country": "USA",
-            "image": "url"
-        },
-        {
-            "id": "18",
-            "name": "Detroit",
-            "state": "Michigan",
-            "country": "USA",
-            "image": "url"
-        },
-        {
-            "id": "19",
-            "name": "El Paso",
-            "state": "Texas",
-            "country": "USA",
-            "image": "url"
-        },
-        {
-            "id": "20",
-            "name": "Memphis",
-            "state": "Tennessee",
-            "country": "USA",
-            "image": "url"
-        },
-        {
-            "id": "21",
-            "name": "Seattle",
-            "state": "Washington",
-            "country": "USA",
-            "image": "url"
-        },
-        {
-            "id": "22",
-            "name": "Denver",
-            "state": "Colorado",
-            "country": "USA",
-            "image": "url"
-        },
-        {
-            "id": "23",
-            "name": "Washington",
-            "state": "D.C.",
-            "country": "USA",
-            "image": "url"
-        },
-        {
-            "id": "24",
-            "name": "Boston",
-            "state": "Massachusetts",
-            "country": "USA",
-            "image": "url"
-        },
-        {
-            "id": "25",
-            "name": "Nashville",
-            "state": "Tennessee",
-            "country": "USA",
-            "image": "url"
-        },
-        {
-            "id": "26",
-            "name": "Baltimore",
-            "state": "Maryland",
-            "country": "USA",
-            "image": "url"
-        },
-        {
-            "id": "27",
-            "name": "Oklahoma City",
-            "state": "Oklahoma",
-            "country": "USA",
-            "image": "url"
-        },
-        {
-            "id": "28",
-            "name": "Louisville",
-            "state": "Kentucky",
-            "country": "USA",
-            "image": "url"
-        },
-        {
-            "id": "29",
-            "name": "Portland",
-            "state": "Oregon",
-            "country": "USA",
-            "image": "url"
-        },
-        {
-            "id": "30",
-            "name": "Las Vegas",
-            "state": "Nevada",
-            "country": "USA",
-            "image": "url"
-        },
-        {
-            "id": "31",
-            "name": "Milwaukee",
-            "state": "Wisconsin",
-            "country": "USA",
-            "image": "url"
-        },
-        {
-            "id": "32",
-            "name": "Albuquerque",
-            "state": "New Mexico",
-            "country": "USA",
-            "image": "url"
-        },
-        {
-            "id": "33",
-            "name": "Tucson",
-            "state": "Arizona",
-            "country": "USA",
-            "image": "url"
-        },
-        {
-            "id": "34",
-            "name": "Fresno",
-            "state": "California",
-            "country": "USA",
-            "image": "url"
-        },
-        {
-            "id": "35",
-            "name": "Sacramento",
-            "state": "California",
-            "country": "USA",
-            "image": "url"
-        },
-        {
-            "id": "36",
-            "name": "Kansas City",
-            "state": "Missouri",
-            "country": "USA",
-            "image": "url"
-        },
-        {
-            "id": "37",
-            "name": "Atlanta",
-            "state": "Georgia",
-            "country": "USA",
-            "image": "url"
-        },
-        {
-            "id": "38",
-            "name": "Long Beach",
-            "state": "California",
-            "country": "USA",
-            "image": "url"
-        },
-        {
-            "id": "39",
-            "name": "Miami",
-            "state": "Florida",
-            "country": "USA",
-            "image": "url"
-        },
-        {
-            "id": "40",
-            "name": "Raleigh",
-            "state": "North Carolina",
-            "country": "USA",
-            "image": "url"
-        },
-        {
-            "id": "41",
-            "name": "Virginia Beach",
-            "state": "Virginia",
-            "country": "USA",
-            "image": "url"
-        },
-        {
-            "id": "42",
-            "name": "Omaha",
-            "state": "Nebraska",
-            "country": "USA",
-            "image": "url"
-        },
-        {
-            "id": "43",
-            "name": "Oakland",
-            "state": "California",
-            "country": "USA",
-            "image": "url"
-        },
-        {
-            "id": "44",
-            "name": "Minneapolis",
-            "state": "Minnesota",
-            "country": "USA",
-            "image": "url"
-        },
-        {
-            "id": "45",
-            "name": "Tulsa",
-            "state": "Oklahoma",
-            "country": "USA",
-            "image": "url"
-        },
-        {
-            "id": "46",
-            "name": "Tampa",
-            "state": "Florida",
-            "country": "USA",
-            "image": "url"
-        },
-        {
-            "id": "47",
-            "name": "Arlington",
-            "state": "Texas",
-            "country": "USA",
-            "image": "url"
-        },
-        {
-            "id": "48",
-            "name": "New Orleans",
-            "state": "Louisiana",
-            "country": "USA",
-            "image": "url"
-        },
-        {
-            "id": "49",
-            "name": "Wichita",
-            "state": "Kansas",
-            "country": "USA",
-            "image": "url"
-        },
-        {
-            "id": "50",
-            "name": "Cleveland",
-            "state": "Ohio",
-            "country": "USA",
-            "image": "url"
-        }
-    ]
-    
-}
+[
+    {
+      "id": "1",
+      "name": "Los Angeles",
+      "state": "California",
+      "country": "USA",
+      "image": "url",
+      "sports": ["SOCCER", "BASKETBALL", "BASEBALL"]
+    },
+    {
+      "id": "2",
+      "name": "New York",
+      "state": "New York",
+      "country": "USA",
+      "image": "url",
+      "sports": ["VOLLEYBALL", "FOOTBALL"]
+    },
+    {
+      "id": "3",
+      "name": "Tokyo",
+      "state": "Tokyo",
+      "country": "Japan",
+      "image": "url",
+      "sports": ["BASEBALL", "SOCCER", "PICKLEBALL"]
+    },
+    {
+      "id": "4",
+      "name": "London",
+      "state": "England",
+      "country": "United Kingdom",
+      "image": "url",
+      "sports": ["VOLLEYBALL", "BASKETBALL", "BASEBALL", "SOCCER"]
+    },
+    {
+      "id": "5",
+      "name": "Paris",
+      "state": "Île-de-France",
+      "country": "France",
+      "image": "url",
+      "sports": ["FOOTBALL", "PICKLEBALL"]
+    },
+    {
+      "id": "6",
+      "name": "Sydney",
+      "state": "New South Wales",
+      "country": "Australia",
+      "image": "url",
+      "sports": ["BASKETBALL", "BASEBALL"]
+    },
+    {
+      "id": "7",
+      "name": "Rio de Janeiro",
+      "state": "Rio de Janeiro",
+      "country": "Brazil",
+      "image": "url",
+      "sports": ["SOCCER", "FOOTBALL", "PICKLEBALL"]
+    },
+    {
+      "id": "8",
+      "name": "Berlin",
+      "state": "Berlin",
+      "country": "Germany",
+      "image": "url",
+      "sports": ["BASKETBALL", "BASEBALL"]
+    },
+    {
+      "id": "9",
+      "name": "Cairo",
+      "state": "Cairo Governorate",
+      "country": "Egypt",
+      "image": "url",
+      "sports": ["VOLLEYBALL"]
+    },
+    {
+      "id": "10",
+      "name": "Beijing",
+      "state": "Beijing",
+      "country": "China",
+      "image": "url",
+      "sports": ["SOCCER", "VOLLEYBALL", "FOOTBALL"]
+    }
+  ]
+  

@@ -12,6 +12,7 @@ _$CityImpl _$$CityImplFromJson(Map<String, dynamic> json) => _$CityImpl(
       country: json['country'] as String,
       state: json['state'] as String,
       image: json['image'] as String,
+      sports: const SportConverter().fromJson(json['sports'] as List<String>),
     );
 
 Map<String, dynamic> _$$CityImplToJson(_$CityImpl instance) =>
@@ -21,4 +22,5 @@ Map<String, dynamic> _$$CityImplToJson(_$CityImpl instance) =>
       'country': instance.country,
       'state': instance.state,
       'image': instance.image,
+      'sports': const SportConverter().toJson(instance.sports),
     };
