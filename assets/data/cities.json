@@ -1,0 +1,83 @@
+[
+    {
+      "id": "1",
+      "name": "Los Angeles",
+      "state": "California",
+      "country": "USA",
+      "image": "url",
+      "sports": ["SOCCER", "BASKETBALL", "BASEBALL"]
+    },
+    {
+      "id": "2",
+      "name": "New York",
+      "state": "New York",
+      "country": "USA",
+      "image": "url",
+      "sports": ["VOLLEYBALL", "FOOTBALL"]
+    },
+    {
+      "id": "3",
+      "name": "Tokyo",
+      "state": "Tokyo",
+      "country": "Japan",
+      "image": "url",
+      "sports": ["BASEBALL", "SOCCER", "PICKLEBALL"]
+    },
+    {
+      "id": "4",
+      "name": "London",
+      "state": "England",
+      "country": "United Kingdom",
+      "image": "url",
+      "sports": ["VOLLEYBALL", "BASKETBALL", "BASEBALL", "SOCCER"]
+    },
+    {
+      "id": "5",
+      "name": "Paris",
+      "state": "Île-de-France",
+      "country": "France",
+      "image": "url",
+      "sports": ["FOOTBALL", "PICKLEBALL"]
+    },
+    {
+      "id": "6",
+      "name": "Sydney",
+      "state": "New South Wales",
+      "country": "Australia",
+      "image": "url",
+      "sports": ["BASKETBALL", "BASEBALL"]
+    },
+    {
+      "id": "7",
+      "name": "Rio de Janeiro",
+      "state": "Rio de Janeiro",
+      "country": "Brazil",
+      "image": "url",
+      "sports": ["SOCCER", "FOOTBALL", "PICKLEBALL"]
+    },
+    {
+      "id": "8",
+      "name": "Berlin",
+      "state": "Berlin",
+      "country": "Germany",
+      "image": "url",
+      "sports": ["BASKETBALL", "BASEBALL"]
+    },
+    {
+      "id": "9",
+      "name": "Cairo",
+      "state": "Cairo Governorate",
+      "country": "Egypt",
+      "image": "url",
+      "sports": ["VOLLEYBALL"]
+    },
+    {
+      "id": "10",
+      "name": "Beijing",
+      "state": "Beijing",
+      "country": "China",
+      "image": "url",
+      "sports": ["SOCCER", "VOLLEYBALL", "FOOTBALL"]
+    }
+  ]
+  
