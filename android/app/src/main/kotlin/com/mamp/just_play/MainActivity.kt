@@ -1,4 +1,4 @@
-package com.example.just_play
+package com.mamp.just_play
 
 import io.flutter.embedding.android.FlutterActivity
 
