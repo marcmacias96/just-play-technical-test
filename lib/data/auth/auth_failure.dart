@@ -12,4 +12,5 @@ class AuthFailure with _$AuthFailure {
   const factory AuthFailure.accountAlreadyExists() = AccountAlreadyExists;
   const factory AuthFailure.invalidEmailAndPasswordCombination() =
       InvalidEmailAndPasswordCombination;
+  const factory AuthFailure.emailAlreadyInUse() = EmailAlreadyInUse;
 }
