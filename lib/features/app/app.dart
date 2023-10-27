@@ -4,6 +4,7 @@ import 'package:go_router/go_router.dart';
 import 'package:just_play/features/auth/cubit/auth_cubit.dart';
 import 'package:just_play/injection.dart';
 import 'package:just_play/navigation/navigation.dart';
+import 'package:just_play/theme/theme.dart';
 import 'package:just_play/utils/utils.dart';
 
 class App extends StatefulWidget {
@@ -14,7 +15,6 @@ class App extends StatefulWidget {
 }
 
 class _AppState extends State<App> with WidgetsBindingObserver {
-
   final _authCubit = getIt<AuthCubit>();
   late GoRouter _router;
 
@@ -24,7 +24,6 @@ class _AppState extends State<App> with WidgetsBindingObserver {
     _router = getGoRouter(_authCubit);
     super.initState();
   }
-
 
   @override
   Widget build(BuildContext context) {
@@ -42,6 +41,7 @@ class _AppState extends State<App> with WidgetsBindingObserver {
               routerConfig: _router,
               debugShowCheckedModeBanner: false,
               title: 'JustPlay',
+              theme: AppTheme.theme,
             ),
           );
         },
