@@ -26,6 +26,15 @@ class OnboardingPage extends StatelessWidget {
               },
               child: const Text('Login'),
             ),
+            ElevatedButton(
+              onPressed: () {
+                context.pushNamed(
+                  AuthFormPage.routeName,
+                  extra: const AuthFormArgs(type: AuthFormType.signUp),
+                );
+              },
+              child: const Text('Sign Up'),
+            ),
           ],
         ),
       ),

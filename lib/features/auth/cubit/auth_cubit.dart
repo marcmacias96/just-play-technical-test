@@ -3,22 +3,33 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:injectable/injectable.dart';
 import 'package:just_play/data/auth/auth.dart';
+import 'package:just_play/data/local/I_local_repository.dart';
 
 part 'auth_state.dart';
 part 'auth_cubit.freezed.dart';
 
 @injectable
 class AuthCubit extends Cubit<AuthState> {
- AuthCubit(this._firebaseAuth) : super(const AuthState.initial());
+  AuthCubit(this._firebaseAuth, this._localRepository)
+      : super(const AuthState.initial());
 
   final FirebaseAuth _firebaseAuth;
+  final ILocalRepository _localRepository;
 
   Stream<void> authCheck() async* {
-    yield _firebaseAuth.authStateChanges().listen((user) {
+    yield _firebaseAuth.authStateChanges().listen((user) async {
       if (user == null) {
         emit(const AuthState.unauthenticated());
       } else {
-        emit(const AuthState.authenticated());
+        final userId = await _localRepository.getCachedUser();
+        final isNewUser =
+            user.metadata.creationTime == user.metadata.lastSignInTime &&
+                userId.isEmpty;
+        emit(
+          AuthState.authenticated(
+            isNewUser: isNewUser,
+          ),
+        );
       }
     });
   }
