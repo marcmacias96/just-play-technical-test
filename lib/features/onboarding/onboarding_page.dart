@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:just_play/features/auth_form/auth_form.dart';
+import 'package:just_play/widgets/widgets.dart';
 
 class OnboardingPage extends StatelessWidget {
   const OnboardingPage({super.key});
@@ -26,14 +27,14 @@ class OnboardingPage extends StatelessWidget {
               },
               child: const Text('Login'),
             ),
-            ElevatedButton(
+            CustomElevatedButton(
               onPressed: () {
                 context.pushNamed(
                   AuthFormPage.routeName,
                   extra: const AuthFormArgs(type: AuthFormType.signUp),
                 );
               },
-              child: const Text('Sign Up'),
+              text: 'Sign Up',
             ),
           ],
         ),
