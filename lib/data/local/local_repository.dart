@@ -1,5 +1,5 @@
 import 'package:injectable/injectable.dart';
-import 'package:just_play/data/local/I_local_repository.dart';
+import 'package:just_play/data/local/local.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 @LazySingleton(as: ILocalRepository)
