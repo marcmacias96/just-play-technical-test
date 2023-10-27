@@ -86,7 +86,7 @@ class _AuthFormPageState extends State<AuthFormPage> {
                           },
                           decoration: const InputDecoration(labelText: 'Email'),
                         ),
-                        const SizedBox(height: 8.0),
+                        const SizedBox(height: 8),
                         ReactiveTextField<String>(
                           formControl: formModel.passwordControl,
                           obscureText: true,
@@ -98,7 +98,7 @@ class _AuthFormPageState extends State<AuthFormPage> {
                           decoration:
                               const InputDecoration(labelText: 'Password'),
                         ),
-                        const SizedBox(height: 8.0),
+                        const SizedBox(height: 8),
                         ReactiveCredentialsFormConsumer(
                           builder: (context, form, child) {
                             return ElevatedButton(

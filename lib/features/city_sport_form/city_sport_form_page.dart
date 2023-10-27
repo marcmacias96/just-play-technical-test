@@ -8,7 +8,7 @@ class CitySportFormPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
-      body: Text("CitySportFormPage"),
+      body: Text('CitySportFormPage'),
     );
   }
 }
