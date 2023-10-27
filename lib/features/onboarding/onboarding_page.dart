@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:just_play/features/auth_form/auth_form_page.dart';
+import 'package:just_play/features/auth_form/auth_form.dart';
 
 class OnboardingPage extends StatelessWidget {
   const OnboardingPage({super.key});

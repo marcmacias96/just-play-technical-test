@@ -4,7 +4,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
 import 'package:just_play/features/auth_form/cubit/auth_form_cubit.dart';
 import 'package:just_play/features/auth_form/model/credentials.dart';
-import 'package:just_play/features/city_sport_form/city_sport_form_page.dart';
+import 'package:just_play/features/city_sport_form/city_sport_form.dart';
 import 'package:just_play/features/home/home.dart';
 import 'package:just_play/injection.dart';
 import 'package:reactive_forms/reactive_forms.dart';

@@ -3,7 +3,7 @@ import 'package:go_router/go_router.dart';
 import 'package:just_play/features/auth/auth.dart';
 import 'package:just_play/features/auth/cubit/auth_cubit.dart';
 import 'package:just_play/features/auth_form/auth_form.dart';
-import 'package:just_play/features/city_sport_form/city_sport_form_page.dart';
+import 'package:just_play/features/city_sport_form/city_sport_form.dart';
 import 'package:just_play/features/home/home.dart';
 import 'package:just_play/features/onboarding/onboarding.dart';
 import 'package:just_play/utils/utils.dart';

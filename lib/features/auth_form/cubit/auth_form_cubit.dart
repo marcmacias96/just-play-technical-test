@@ -3,7 +3,7 @@ import 'package:dartz/dartz.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:injectable/injectable.dart';
 import 'package:just_play/data/auth/auth.dart';
-import 'package:just_play/features/auth_form/model/credentials.dart';
+import 'package:just_play/features/auth_form/model/model.dart';
 
 part 'auth_form_state.dart';
 part 'auth_form_cubit.freezed.dart';
