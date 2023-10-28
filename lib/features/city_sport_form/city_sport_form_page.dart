@@ -4,7 +4,6 @@ import 'package:just_play/features/auth/cubit/cubit.dart';
 import 'package:just_play/features/city_sport_form/cubit/cubit.dart';
 import 'package:just_play/features/city_sport_form/widgets/widgets.dart';
 import 'package:just_play/injection.dart';
-import 'package:just_play/widgets/widgets.dart';
 
 class CitySportFormPage extends StatelessWidget {
   const CitySportFormPage({super.key});
@@ -40,30 +39,8 @@ class CitySportFormPage extends StatelessWidget {
                     ),
                   ),
                 if (state.showError)
-                  SliverFillRemaining(
-                    child: Center(
-                      child: SizedBox(
-                        height: MediaQuery.of(context).size.height * 0.4,
-                        child: Column(
-                          children: [
-                            Text(
-                              '!Oops!',
-                              style: theme.textTheme.titleLarge,
-                            ),
-                            Text(
-                              'Something went wrong',
-                              style: theme.textTheme.titleMedium,
-                            ),
-                            CustomElevatedButton(
-                              onPressed: () => context
-                                  .read<CitySportFormCubit>()
-                                  .getCities(),
-                              text: 'Retry',
-                            ),
-                          ],
-                        ),
-                      ),
-                    ),
+                  const SliverFillRemaining(
+                    child: ErrorLoad(),
                   ),
                 SliverList.builder(
                   itemCount: state.cities.length,
