@@ -29,6 +29,7 @@ class CustomInput extends StatelessWidget {
     return Container(
       margin: margin ?? const EdgeInsets.all(ThemePadding.medium),
       child: ReactiveTextField<String>(
+        maxLength: 100,
         obscureText: obscureText,
         formControl: formControl,
         keyboardType: keyboardType,
@@ -37,7 +38,11 @@ class CustomInput extends StatelessWidget {
         decoration: InputDecoration(
           hintText: hintText,
           labelText: labelText,
+          counterText: '',
         ),
+        onEditingComplete: (_) {
+          FocusScope.of(context).nextFocus();
+        },
       ),
     );
   }

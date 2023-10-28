@@ -116,6 +116,9 @@ class _AuthFormPageState extends State<AuthFormPage> {
                                 validationMessages: {
                                   ValidationMessage.required: (_) =>
                                       'The password must not be empty',
+                                  ValidationMessage.minLength: (_) =>
+                                      'The password must be'
+                                      ' at least 6 characters',
                                 },
                                 textInputAction: TextInputAction.done,
                                 hintText: 'Password',
