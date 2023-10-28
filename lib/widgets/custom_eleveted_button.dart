@@ -35,7 +35,7 @@ class CustomElevatedButton extends StatelessWidget {
         style: ButtonStyle(
           backgroundColor: MaterialStateProperty.resolveWith<Color?>(
             (Set<MaterialState> states) {
-              if (states.contains(MaterialState.disabled)) {
+              if (states.contains(MaterialState.disabled) && !loading) {
                 return Colors.grey; // defer to the defaults
               }
               return isSecondary ? Colors.white : AppColors.primary;
@@ -47,8 +47,9 @@ class CustomElevatedButton extends StatelessWidget {
           mainAxisSize: mainAxisSize,
           children: loading
               ? [
-                  const CircularProgressIndicator.adaptive(
-                    backgroundColor: AppColors.primary,
+                  CircularProgressIndicator.adaptive(
+                    backgroundColor:
+                        isSecondary ? AppColors.primary : Colors.white,
                   ),
                 ]
               : [
