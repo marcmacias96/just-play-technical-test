@@ -4,8 +4,8 @@ import 'package:just_play/assets/assets.dart';
 
 /// A widget that displays a brand logo or icon.
 ///
-/// This widget is used to display a brand logo or icon within your app. It allows
-/// you to specify the size and alignment of the logo/icon.
+/// This widget is used to display a brand logo or icon within your app. 
+/// It allows you to specify the size and alignment of the logo/icon.
 ///
 /// Parameters:
 ///  - [size]: The size of the brand logo or icon, which is both the width and
@@ -22,8 +22,9 @@ import 'package:just_play/assets/assets.dart';
 /// )
 /// ```
 ///
-/// In the example above, a `Brand` widget is used to display a brand logo with a
-/// size of 80.0, and it is aligned to the center-left of its container. You can
+/// In the example above, a `Brand` widget is used to display a brand 
+/// logo with a  size of 80.0, and it is aligned to the center-left 
+/// of its container. You can
 /// adjust the size and alignment to match your app's branding requirements.
 class Brand extends StatelessWidget {
   const Brand({

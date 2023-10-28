@@ -18,7 +18,8 @@
 /// await localRepository.removeCachedUser();
 /// ```
 ///
-/// In the example above, an instance of a class implementing the [ILocalRepository]
+/// In the example above, an instance of a class implementing 
+/// the [ILocalRepository]
 /// interface is used to perform local data storage operations. This interface
 /// can be used as a contract to define methods for caching and retrieving
 /// user-related data locally on the device.

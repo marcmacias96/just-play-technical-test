@@ -24,15 +24,18 @@ import 'package:just_play/data/auth/auth.dart';
 /// }
 /// ```
 ///
-/// In the example above, an instance of a class implementing the [IAuthRepository]
+/// In the example above, an instance of a class implementing 
+/// the [IAuthRepository]
 /// interface is used to perform authentication operations. You can use this
 /// interface as a contract to define authentication-related methods within your
 /// application.
 abstract class IAuthRepository {
   /// Sign in with an email and password.
   ///
-  /// This method attempts to authenticate a user with the provided [emailAddress]
-  /// and [password]. If the authentication is successful, it returns [Right(Unit)].
+  /// This method attempts to authenticate a user with 
+  /// the provided [emailAddress]
+  /// and [password]. If the authentication is successful, 
+  /// it returns [Right(Unit)].
   /// Otherwise, it returns [Left(AuthFailure)] with details of the failure.
   Future<Either<AuthFailure, Unit>> signInWithEmailPassword({
     required String emailAddress,
@@ -41,8 +44,10 @@ abstract class IAuthRepository {
 
   /// Register a new user with an email and password.
   ///
-  /// This method attempts to register a new user with the provided [emailAddress]
-  /// and [password]. If the registration is successful, it returns [Right(Unit)].
+  /// This method attempts to register a new user 
+  /// with the provided [emailAddress]
+  /// and [password]. If the registration is successful, 
+  /// it returns [Right(Unit)].
   /// Otherwise, it returns [Left(AuthFailure)] with details of the failure.
   Future<Either<AuthFailure, Unit>> registerWithEmailAndPassword({
     required String emailAddress,

@@ -16,8 +16,10 @@ import 'package:shared_preferences/shared_preferences.dart';
 /// ```
 ///
 /// In the example above, you can access Firebase-related dependencies using
-/// instances of [FirebaseInjectableModule]. The [firebaseAuth] is a lazy singleton
-/// providing the [FirebaseAuth] instance, and [sharedPreferences] is pre-resolved
+/// instances of [FirebaseInjectableModule]. The [firebaseAuth] 
+/// is a lazy singleton
+/// providing the [FirebaseAuth] instance, and [sharedPreferences] 
+/// is pre-resolved
 /// to provide a [SharedPreferences] object.
 @module
 abstract class FirebaseInjectableModule {

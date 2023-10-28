@@ -8,9 +8,11 @@ part 'city.g.dart';
 
 /// Represents a city with various attributes.
 ///
-/// This class defines the characteristics of a city, such as its identifier (id),
+/// This class defines the characteristics of a city, such as its 
+/// identifier (id),
 /// name, country, state, image, and the list of sports it offers. It leverages
-/// the `freezed_annotation` library to generate immutable constructors and methods
+/// the `freezed_annotation` library to generate immutable constructors 
+/// and methods
 /// for safer object creation and serialization.
 ///
 /// Parameters:
