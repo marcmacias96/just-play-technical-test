@@ -2,7 +2,7 @@ import 'package:animate_do/animate_do.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:just_play/assets/assets.dart';
-import 'package:just_play/features/city_sport_form/cubit/city_sport_form_cubit.dart';
+import 'package:just_play/features/city_sport_form/cubit/cubit.dart';
 import 'package:just_play/theme/theme.dart';
 import 'package:just_play/utils/alerts.dart';
 
