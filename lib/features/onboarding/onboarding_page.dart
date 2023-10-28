@@ -50,12 +50,8 @@ class OnboardingPage extends StatelessWidget {
                         color: Colors.white,
                       ),
                     ),
-                    Align(
-                      child: Image.asset(
-                        Images.icon,
-                        width: 200,
-                        height: 200,
-                      ),
+                    const Brand(
+                      size: 200,
                     ),
                     Column(
                       children: [

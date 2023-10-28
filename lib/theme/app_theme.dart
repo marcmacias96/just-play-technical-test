@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:just_play/features/app/app.dart';
+import 'package:just_play/theme/theme.dart';
 
 mixin AppTheme {
   static ThemeData get theme => ThemeData(
         useMaterial3: true,
         colorScheme: ColorScheme.fromSeed(
-          seedColor: const Color(0xFFFE5B5F),
+          seedColor: AppColors.primary,
         ),
         elevatedButtonTheme: ElevatedButtonThemeData(
           style: ButtonStyle(
@@ -13,7 +15,7 @@ mixin AppTheme {
               Colors.white,
             ),
             foregroundColor: MaterialStateProperty.all<Color>(
-              const Color(0xFFFE5B5F),
+              AppColors.primary,
             ),
             textStyle: MaterialStateProperty.all<TextStyle>(
               GoogleFonts.teko(

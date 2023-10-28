@@ -9,7 +9,7 @@ class CustomInput extends StatelessWidget {
     super.key,
     this.hintText,
     this.labelText,
-    this.validators,
+    this.validationMessages,
     this.textInputAction,
     this.margin,
     this.obscureText = false,
@@ -19,7 +19,7 @@ class CustomInput extends StatelessWidget {
   final String? hintText;
   final String? labelText;
   final FormControl<String> formControl;
-  final Map<String, String Function(Object)>? validators;
+  final Map<String, String Function(Object)>? validationMessages;
   final TextInputAction? textInputAction;
   final EdgeInsetsDirectional? margin;
   final bool obscureText;
@@ -29,15 +29,20 @@ class CustomInput extends StatelessWidget {
     return Container(
       margin: margin ?? const EdgeInsets.all(ThemePadding.medium),
       child: ReactiveTextField<String>(
+        maxLength: 100,
         obscureText: obscureText,
         formControl: formControl,
         keyboardType: keyboardType,
         textInputAction: textInputAction,
-        validationMessages: validators,
+        validationMessages: validationMessages,
         decoration: InputDecoration(
           hintText: hintText,
           labelText: labelText,
+          counterText: '',
         ),
+        onEditingComplete: (_) {
+          FocusScope.of(context).nextFocus();
+        },
       ),
     );
   }

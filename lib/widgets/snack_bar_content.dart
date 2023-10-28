@@ -27,8 +27,8 @@ class SnackBarContent extends StatelessWidget {
         ),
         const SizedBox(width: ThemePadding.medium),
         Icon(
-          isSuccess ? Icons.check_circle : Icons.error,
-          color: isSuccess ? Colors.green : Colors.red,
+          isSuccess ? Icons.check_circle : Icons.error_rounded,
+          color: isSuccess ? Colors.green : Colors.white,
         ),
       ],
     );

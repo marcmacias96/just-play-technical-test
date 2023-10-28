@@ -33,8 +33,13 @@ class CustomElevatedButton extends StatelessWidget {
       child: ElevatedButton(
         onPressed: enabled & !loading ? onPressed : null,
         style: ButtonStyle(
-          backgroundColor: MaterialStateProperty.all<Color>(
-            isSecondary ? Colors.white : AppColors.primary,
+          backgroundColor: MaterialStateProperty.resolveWith<Color?>(
+            (Set<MaterialState> states) {
+              if (states.contains(MaterialState.disabled)) {
+                return Colors.grey; // defer to the defaults
+              }
+              return isSecondary ? Colors.white : AppColors.primary;
+            },
           ),
         ),
         child: Row(
