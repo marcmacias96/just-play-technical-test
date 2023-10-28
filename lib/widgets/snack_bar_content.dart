@@ -20,7 +20,7 @@ class SnackBarContent extends StatelessWidget {
           child: Text(
             message,
             style: theme.textTheme.bodyMedium!.copyWith(
-              color: isSuccess ? theme.colorScheme.onPrimary : Colors.white,
+              color: isSuccess ? Colors.black : Colors.white,
               fontSize: 20,
             ),
           ),

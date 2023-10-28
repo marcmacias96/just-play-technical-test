@@ -7,7 +7,9 @@ environment:
   sdk: '>=3.1.3 <4.0.0'
 
 dependencies:
+  animate_do: ^3.1.2
   bloc: ^8.1.2
+  cached_network_image: ^3.3.0
   cupertino_icons: ^1.0.2
   dartz: ^0.10.1
   equatable: ^2.0.5
@@ -42,4 +44,5 @@ flutter:
   assets:
     - assets/data/cities.json
     - assets/images/
+    - assets/images/sports/
   uses-material-design: true

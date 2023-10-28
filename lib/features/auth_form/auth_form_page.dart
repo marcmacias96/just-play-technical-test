@@ -1,12 +1,8 @@
 import 'package:equatable/equatable.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:go_router/go_router.dart';
-import 'package:just_play/features/auth/auth.dart';
-import 'package:just_play/features/auth_form/cubit/auth_form_cubit.dart';
-import 'package:just_play/features/auth_form/model/credentials.dart';
-import 'package:just_play/features/city_sport_form/city_sport_form.dart';
-import 'package:just_play/features/home/home.dart';
+import 'package:just_play/features/auth_form/cubit/cubit.dart';
+import 'package:just_play/features/auth_form/model/model.dart';
 import 'package:just_play/injection.dart';
 import 'package:just_play/theme/padding.dart';
 import 'package:just_play/utils/utils.dart';
@@ -150,7 +146,7 @@ class _AuthFormPageState extends State<AuthFormPage> {
                       );
                     },
                   ),
-                )
+                ),
               ],
             );
           },

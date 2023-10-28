@@ -9,9 +9,9 @@ class CityRepository {
   const CityRepository();
   Future<Either<CityFailure, List<City>>> getCities() async {
     try {
-      final citiesMap = await parseJsonFromAssets('assets/cities.json');
-      final cities = (citiesMap['data'] as List<Map<String, dynamic>>)
-          .map(City.fromJson)
+      final citiesMap = await parseJsonFromAssets('assets/data/cities.json');
+      final cities = (citiesMap['data'] as List<dynamic>)
+          .map((e) => City.fromJson(e as Map<String, dynamic>))
           .toList();
       return right(cities);
     } catch (_) {

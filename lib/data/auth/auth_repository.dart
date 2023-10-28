@@ -49,4 +49,9 @@ class AuthRepository implements IAuthRepository {
           : left(const AuthFailure.serverError());
     }
   }
+  
+  @override
+  Future<User?> getUser() async {
+    return _firebaseAuth.currentUser;
+  }
 }

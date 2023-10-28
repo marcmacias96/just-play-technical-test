@@ -34,6 +34,7 @@ class AuthCubit extends Cubit<AuthState> {
 
   Future<void> signOut() async {
     try {
+      await _localRepository.removeCachedUser();
       await _firebaseAuth.signOut();
       emit(const AuthState.unauthenticated());
     } on FirebaseAuthException catch (_) {

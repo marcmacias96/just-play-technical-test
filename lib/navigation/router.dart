@@ -6,6 +6,7 @@ import 'package:just_play/features/auth_form/auth_form.dart';
 import 'package:just_play/features/city_sport_form/city_sport_form.dart';
 import 'package:just_play/features/home/home.dart';
 import 'package:just_play/features/onboarding/onboarding.dart';
+import 'package:just_play/navigation/navigation.dart';
 import 'package:just_play/utils/utils.dart';
 
 GoRouter getGoRouter(AuthCubit authCubit) {
@@ -19,10 +20,14 @@ GoRouter getGoRouter(AuthCubit authCubit) {
       GoRoute(
         name: AuthFormPage.routeName,
         path: '/${AuthFormPage.routeName}',
-        builder: (context, state) {
+        pageBuilder: (context, state) {
           final args = state.extra! as AuthFormArgs;
-          return AuthFormPage(
-            args: args,
+          return buildPageWithDefaultTransition<void>(
+            context: context,
+            state: state,
+            child: AuthFormPage(
+              args: args,
+            ),
           );
         },
       ),
@@ -51,8 +56,12 @@ GoRouter getGoRouter(AuthCubit authCubit) {
         orElse: () {
           return null;
         },
-        authenticated: (authenticated) {
-          if(authenticated.isNewUser) {
+        authenticated: (authenticated) async {
+          await Future.delayed(
+            const Duration(milliseconds: 500),
+            () {},
+          );
+          if (authenticated.isNewUser) {
             return '/${CitySportFormPage.routeName}';
           }
           return '/${HomePage.routeName}';

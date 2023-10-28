@@ -1,10 +1,11 @@
-[
+{ 
+  "data" : [
     {
       "id": "1",
       "name": "Los Angeles",
       "state": "California",
       "country": "USA",
-      "image": "url",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/3/32/20190616154621%21Echo_Park_Lake_with_Downtown_Los_Angeles_Skyline.jpg",
       "sports": ["SOCCER", "BASKETBALL", "BASEBALL"]
     },
     {
@@ -12,7 +13,7 @@
       "name": "New York",
       "state": "New York",
       "country": "USA",
-      "image": "url",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/View_of_Empire_State_Building_from_Rockefeller_Center_New_York_City_dllu_%28cropped%29.jpg/1200px-View_of_Empire_State_Building_from_Rockefeller_Center_New_York_City_dllu_%28cropped%29.jpg",
       "sports": ["VOLLEYBALL", "FOOTBALL"]
     },
     {
@@ -20,7 +21,7 @@
       "name": "Tokyo",
       "state": "Tokyo",
       "country": "Japan",
-      "image": "url",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Skyscrapers_of_Shinjuku_2009_January_%28revised%29.jpg/500px-Skyscrapers_of_Shinjuku_2009_January_%28revised%29.jpg",
       "sports": ["BASEBALL", "SOCCER", "PICKLEBALL"]
     },
     {
@@ -28,7 +29,7 @@
       "name": "London",
       "state": "England",
       "country": "United Kingdom",
-      "image": "url",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRglyJFuZ0HD7rGIXPdLWQovKcXFMNKo10-UPXfdnp2pgFWmskXB12hUm8e0Bdwh68QAd4&usqp=CAU",
       "sports": ["VOLLEYBALL", "BASKETBALL", "BASEBALL", "SOCCER"]
     },
     {
@@ -36,7 +37,7 @@
       "name": "Paris",
       "state": "Île-de-France",
       "country": "France",
-      "image": "url",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg/1200px-La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg",
       "sports": ["FOOTBALL", "PICKLEBALL"]
     },
     {
@@ -44,7 +45,7 @@
       "name": "Sydney",
       "state": "New South Wales",
       "country": "Australia",
-      "image": "url",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/5/53/Sydney_Opera_House_and_Harbour_Bridge_Dusk_%282%29_2019-06-21.jpg",
       "sports": ["BASKETBALL", "BASEBALL"]
     },
     {
@@ -52,7 +53,7 @@
       "name": "Rio de Janeiro",
       "state": "Rio de Janeiro",
       "country": "Brazil",
-      "image": "url",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Cidade_Maravilhosa.jpg/1200px-Cidade_Maravilhosa.jpg",
       "sports": ["SOCCER", "FOOTBALL", "PICKLEBALL"]
     },
     {
@@ -60,7 +61,7 @@
       "name": "Berlin",
       "state": "Berlin",
       "country": "Germany",
-      "image": "url",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Museumsinsel_Berlin_Juli_2021_1_%28cropped%29.jpg/1200px-Museumsinsel_Berlin_Juli_2021_1_%28cropped%29.jpg",
       "sports": ["BASKETBALL", "BASEBALL"]
     },
     {
@@ -68,7 +69,7 @@
       "name": "Cairo",
       "state": "Cairo Governorate",
       "country": "Egypt",
-      "image": "url",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Cairo_From_Tower_%28cropped%29.jpg/278px-Cairo_From_Tower_%28cropped%29.jpg",
       "sports": ["VOLLEYBALL"]
     },
     {
@@ -76,8 +77,8 @@
       "name": "Beijing",
       "state": "Beijing",
       "country": "China",
-      "image": "url",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Skyline_of_Beijing_CBD_from_the_southeast_%2820210907094201%29.jpg/1200px-Skyline_of_Beijing_CBD_from_the_southeast_%2820210907094201%29.jpg",
       "sports": ["SOCCER", "VOLLEYBALL", "FOOTBALL"]
     }
   ]
-  
+}
