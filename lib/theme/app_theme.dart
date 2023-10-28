@@ -6,7 +6,6 @@ mixin AppTheme {
         useMaterial3: true,
         colorScheme: ColorScheme.fromSeed(
           seedColor: const Color(0xFFFE5B5F),
-          brightness: Brightness.dark,
         ),
         elevatedButtonTheme: ElevatedButtonThemeData(
           style: ButtonStyle(
@@ -26,8 +25,12 @@ mixin AppTheme {
         ),
         textTheme: TextTheme(
           displayLarge: GoogleFonts.teko(
-            fontSize: 30,
-            fontStyle: FontStyle.normal,
+            fontSize: 35,
+            fontWeight: FontWeight.bold,
+          ),
+          titleLarge: GoogleFonts.teko(
+            fontSize: 25,
+            fontWeight: FontWeight.w700,
           ),
           titleMedium: GoogleFonts.teko(
             fontSize: 20,
