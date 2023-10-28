@@ -1,11 +1,8 @@
 import 'package:equatable/equatable.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:go_router/go_router.dart';
-import 'package:just_play/features/auth_form/cubit/auth_form_cubit.dart';
-import 'package:just_play/features/auth_form/model/credentials.dart';
-import 'package:just_play/features/city_sport_form/city_sport_form.dart';
-import 'package:just_play/features/home/home.dart';
+import 'package:just_play/features/auth_form/cubit/cubit.dart';
+import 'package:just_play/features/auth_form/model/model.dart';
 import 'package:just_play/injection.dart';
 import 'package:just_play/theme/padding.dart';
 import 'package:just_play/utils/utils.dart';
@@ -61,8 +58,6 @@ class _AuthFormPageState extends State<AuthFormPage> {
       create: (context) => getIt<AuthFormCubit>(),
       child: Scaffold(
         body: BlocConsumer<AuthFormCubit, AuthFormState>(
-          buildWhen: (previous, current) =>
-              previous.authFailureOrSuccess != current.authFailureOrSuccess,
           listener: _handleListener,
           builder: (context, state) {
             final theme = Theme.of(context);
@@ -151,7 +146,7 @@ class _AuthFormPageState extends State<AuthFormPage> {
                       );
                     },
                   ),
-                )
+                ),
               ],
             );
           },
@@ -173,9 +168,7 @@ class _AuthFormPageState extends State<AuthFormPage> {
         ),
         type: SnackBarType.error,
       ),
-      (unit) => widget.args.type == AuthFormType.login
-          ? context.pushNamed(HomePage.routeName)
-          : context.pushNamed(CitySportFormPage.routeName),
+      (unit) => null,
     );
   }
 }

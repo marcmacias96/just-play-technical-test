@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:just_play/assets/assets.dart';
-import 'package:just_play/features/auth/cubit/auth_cubit.dart';
+import 'package:just_play/features/auth/cubit/cubit.dart';
 
 class AuthPage extends StatefulWidget {
   const AuthPage({super.key});

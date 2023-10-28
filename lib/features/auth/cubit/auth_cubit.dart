@@ -22,9 +22,7 @@ class AuthCubit extends Cubit<AuthState> {
         emit(const AuthState.unauthenticated());
       } else {
         final userId = await _localRepository.getCachedUser();
-        final isNewUser =
-            user.metadata.creationTime == user.metadata.lastSignInTime &&
-                userId.isEmpty;
+        final isNewUser = userId.isEmpty;
         emit(
           AuthState.authenticated(
             isNewUser: isNewUser,
@@ -36,6 +34,7 @@ class AuthCubit extends Cubit<AuthState> {
 
   Future<void> signOut() async {
     try {
+      await _localRepository.removeCachedUser();
       await _firebaseAuth.signOut();
       emit(const AuthState.unauthenticated());
     } on FirebaseAuthException catch (_) {

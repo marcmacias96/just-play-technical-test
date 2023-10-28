@@ -1,3 +1,4 @@
+import 'package:animate_do/animate_do.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:just_play/assets/assets.dart';
@@ -44,14 +45,19 @@ class OnboardingPage extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text(
-                      'Pickup games,\nleagues and tournaments near you.',
-                      style: theme.textTheme.displayLarge!.copyWith(
-                        color: Colors.white,
+                    FadeInDown(
+                      child: Text(
+                        'Pickup games,\nleagues and tournaments near you.',
+                        style: theme.textTheme.displayLarge!.copyWith(
+                          color: Colors.white,
+                        ),
                       ),
                     ),
-                    const Brand(
-                      size: 200,
+                    ZoomIn(
+                      delay: const Duration(milliseconds: 500),
+                      child: const Brand(
+                        size: 300,
+                      ),
                     ),
                     Column(
                       children: [

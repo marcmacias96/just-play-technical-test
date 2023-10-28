@@ -14,12 +14,16 @@ import 'package:injectable/injectable.dart' as _i2;
 import 'package:just_play/data/auth/auth.dart' as _i9;
 import 'package:just_play/data/auth/auth_repository.dart' as _i6;
 import 'package:just_play/data/auth/i_auth_interface.dart' as _i5;
+import 'package:just_play/data/city/city.dart' as _i14;
 import 'package:just_play/data/city/city_repository.dart' as _i3;
-import 'package:just_play/data/core/firebase_injectable_module.dart' as _i13;
+import 'package:just_play/data/core/firebase_injectable_module.dart' as _i16;
+import 'package:just_play/data/local/i_local_repository.dart' as _i15;
 import 'package:just_play/data/local/local.dart' as _i10;
 import 'package:just_play/data/local/local_repository.dart' as _i11;
 import 'package:just_play/features/auth/cubit/auth_cubit.dart' as _i12;
 import 'package:just_play/features/auth_form/cubit/auth_form_cubit.dart' as _i8;
+import 'package:just_play/features/city_sport_form/cubit/city_sport_form_cubit.dart'
+    as _i13;
 import 'package:shared_preferences/shared_preferences.dart' as _i7;
 
 extension GetItInjectableX on _i1.GetIt {
@@ -51,8 +55,13 @@ extension GetItInjectableX on _i1.GetIt {
           gh<_i4.FirebaseAuth>(),
           gh<_i10.ILocalRepository>(),
         ));
+    gh.factory<_i13.CitySportFormCubit>(() => _i13.CitySportFormCubit(
+          gh<_i14.CityRepository>(),
+          gh<_i15.ILocalRepository>(),
+          gh<_i9.IAuthRepository>(),
+        ));
     return this;
   }
 }
 
-class _$FirebaseInjectableModule extends _i13.FirebaseInjectableModule {}
+class _$FirebaseInjectableModule extends _i16.FirebaseInjectableModule {}
