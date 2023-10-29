@@ -80,4 +80,8 @@ If you have any questions or need further assistance, please feel free to contac
 Thank you for your interest in the **JustPlay** mobile application. Happy coding! 🚀
 
 ## Request access to config files
-If you need access to the Firebase configuration files or additional configuration details, please contact our team at config@justplayapp.com.
+If you need access to the Firebase configuration files or additional configuration details, please request access here
+[Request access](https://drive.google.com/drive/folders/1gJeqVaSgKMsuRsfkF3IBPVfiP5W5J3gD?usp=drive_link)
+
+## Download apk
+[Download apk](https://drive.google.com/drive/folders/1Efc1axn45SYWU84xcFOiZ3Z1gTimNN2p?usp=sharing)
