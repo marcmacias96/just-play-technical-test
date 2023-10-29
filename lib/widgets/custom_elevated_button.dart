@@ -92,9 +92,12 @@ class CustomElevatedButton extends StatelessWidget {
           mainAxisSize: mainAxisSize,
           children: loading
               ? [
-                  CircularProgressIndicator.adaptive(
-                    backgroundColor:
-                        isSecondary ? AppColors.primary : Colors.white,
+                  Padding(
+                    padding: const EdgeInsets.all(ThemePadding.medium),
+                    child: CircularProgressIndicator.adaptive(
+                      backgroundColor:
+                          isSecondary ? AppColors.primary : Colors.white,
+                    ),
                   ),
                 ]
               : [
