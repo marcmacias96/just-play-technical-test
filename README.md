@@ -19,6 +19,7 @@ To get started with this project, follow these instructions:
 ### Prerequisites
 
 - Install Flutter: Make sure you have Flutter installed on your development machine. You can find installation instructions on the [Flutter website](https://flutter.dev/docs/get-started/install).
+- Use FVM with Flutter stable version
 
 ### Clone the Repository
 
