@@ -6,6 +6,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter/widgets.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:injectable/injectable.dart';
 import 'package:just_play/features/app/app_bloc_observer.dart';
 import 'package:just_play/firebase_options.dart';
@@ -18,6 +19,9 @@ Future<void> bootstrap(FutureOr<Widget> Function() builder) async {
 
   await runZonedGuarded(
     () async {
+
+      await dotenv.load();
+      
       WidgetsFlutterBinding.ensureInitialized();
 
       configureDependencies(Environment.prod);

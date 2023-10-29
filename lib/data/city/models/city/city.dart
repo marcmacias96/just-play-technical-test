@@ -1,6 +1,6 @@
 
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:just_play/data/city/enum/enum.dart';
+import 'package:just_play/data/city/enums/enums.dart';
 import 'package:just_play/data/city/helpers/helpers.dart';
 
 part 'city.freezed.dart';

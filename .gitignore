@@ -60,3 +60,6 @@ android/fastlane/report.xml
 
 # build
 ios/build/* 
+
+# env
+*.env

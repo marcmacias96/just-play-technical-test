@@ -1,5 +1,9 @@
+import 'package:dio/dio.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:injectable/injectable.dart';
+import 'package:just_play/data/core/core.dart';
+import 'package:pretty_dio_logger/pretty_dio_logger.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 /// A module for injecting Firebase-related dependencies.
@@ -37,4 +41,28 @@ abstract class FirebaseInjectableModule {
   @preResolve
   Future<SharedPreferences> get sharedPreferences =>
       SharedPreferences.getInstance();
+
+  @lazySingleton
+  Dio get httpClient {
+    final dio = Dio();
+    final headers = {
+      'Content-Type': 'application/json',
+      'Accept': 'application/json',
+      'X-Auth-Token': dotenv.env['API_KEY']!,
+    };
+    dio.options = BaseOptions(
+      baseUrl: Endpoints.baseUrl,
+      connectTimeout: const Duration(milliseconds: 60000),
+      receiveTimeout: const Duration(milliseconds: 60000),
+      headers: headers,
+    );
+    dio.interceptors.add(
+      PrettyDioLogger(
+        requestHeader: true,
+        requestBody: true,
+        responseHeader: true,
+      ),
+    );
+    return dio;
+  }
 }

@@ -1,8 +1,7 @@
 import 'package:dartz/dartz.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:injectable/injectable.dart';
-import 'package:just_play/data/auth/auth_failure.dart';
-import 'package:just_play/data/auth/i_auth_interface.dart';
+import 'package:just_play/data/auth/auth.dart';
 
 @LazySingleton(as: IAuthRepository)
 class AuthRepository implements IAuthRepository {

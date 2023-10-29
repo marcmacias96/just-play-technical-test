@@ -32,7 +32,7 @@ class AuthCubit extends Cubit<AuthState> {
     });
   }
 
-  Future<void> signOut() async {
+  Future<void> logout() async {
     try {
       await _localRepository.removeCachedUser();
       await _firebaseAuth.signOut();

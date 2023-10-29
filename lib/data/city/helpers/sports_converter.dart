@@ -1,5 +1,5 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:just_play/data/city/enum/enum.dart';
+import 'package:just_play/data/city/city.dart';
 
 class SportConverter implements JsonConverter<List<Sport>, List<dynamic>> {
   const SportConverter();
