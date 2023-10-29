@@ -1,16 +1,83 @@
-# just_play
+# JustPlay
 
-A new Flutter project.
+## Introduction
 
-## Getting Started
+Welcome to the **JustPlay** mobile application repository! This repository contains the source code for a Flutter-based mobile application developed as a technical test. The application aims to meet specific criteria, including a login process, city selection, and a list of games, with the freedom to add additional screens and designs as needed.
 
-This project is a starting point for a Flutter application.
+## Objective 📝
 
-A few resources to get you started if this is your first Flutter project:
+The objective of this project is to create a mobile application using Flutter. The application should satisfy the following requirements:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- Have at least three screens: login, city selection, and a list of games.
+- Incorporate at least one animation or screen transition.
+- Additional screens and designs can be implemented as desired.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Getting Started 🚀
+
+To get started with this project, follow these instructions:
+
+### Prerequisites
+
+- Install Flutter: Make sure you have Flutter installed on your development machine. You can find installation instructions on the [Flutter website](https://flutter.dev/docs/get-started/install).
+
+### Clone the Repository
+
+```bash
+git clone https://github.com/yourusername/justplay.git
+cd justplay
+```
+
+### Install Dependencies
+
+Navigate to the project directory and run the following command to install the required dependencies:
+
+```bash
+flutter pub get
+```
+
+### Firebase Configuration
+
+This application uses Firebase for various features, including authentication. To set up Firebase in your project, follow these steps:
+
+#### iOS Configuration
+
+1. Place the `GoogleService-Info.plist` file in the `ios/Runner` directory of your project.
+
+#### Android Configuration
+
+1. Place the `google-services.json` file in the `android/app` directory of your project.
+
+#### Environment Configuration
+
+Create a `.env` file in the root of your project and add your Sport Api key
+
+```env
+API_KEY=sport_api_key
+```
+
+Replace `sport_api_key` with your actual Firebase API key.
+
+### Running the Application
+
+Now that you have set up Flutter and Firebase, you can run the application on your device or simulator:
+
+```bash
+flutter run
+```
+
+## Contributing 🤝
+
+If you would like to contribute to this project, feel free to fork the repository and submit a pull request. We welcome any improvements or new features you'd like to add.
+
+## License 📜
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Contact 📧
+
+If you have any questions or need further assistance, please feel free to contact us at marc.macias96@gmail.com.
+
+Thank you for your interest in the **JustPlay** mobile application. Happy coding! 🚀
+
+## Request access to config files
+If you need access to the Firebase configuration files or additional configuration details, please contact our team at config@justplayapp.com.
