@@ -3,10 +3,7 @@ import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:injectable/injectable.dart';
 import 'package:just_play/data/auth/auth.dart';
 import 'package:just_play/data/city/city.dart';
-import 'package:just_play/data/city/enum/enum.dart';
-import 'package:just_play/data/city/model/model.dart';
-import 'package:just_play/data/local/i_local_repository.dart';
-
+import 'package:just_play/data/local/local.dart';
 part 'city_sport_form_state.dart';
 part 'city_sport_form_cubit.freezed.dart';
 
