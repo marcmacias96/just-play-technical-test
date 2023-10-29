@@ -59,4 +59,7 @@ android/fastlane/README.md
 android/fastlane/report.xml
 
 # build
-    ios/build/* 
+ios/build/* 
+
+# env
+*.env
