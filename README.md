@@ -24,7 +24,7 @@ To get started with this project, follow these instructions:
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/justplay.git
+git clone https://github.com/marcmacias96/just-play-technical-test.git
 cd justplay
 ```
 
